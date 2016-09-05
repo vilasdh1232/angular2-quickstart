@@ -1,8 +1,11 @@
 <html>
 
 <head>
+  <base href="/">
+
   <title>Angular2-Quickstart! - {{title}}</title>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheer" href="node_modules/bootstrap/dist/css/bootstrap.css">
@@ -12,8 +15,15 @@
   <script src="node_modules/zone.js/dist/zone.js"></script>
   <script src="node_modules/reflect-metadata/Reflect.js"></script>
   <script src="node_modules/systemjs/dist/system.src.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
 
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   <!-- 2. Configure SystemJS -->
   <script src="systemjs.config.js"></script>
   <script>
@@ -22,7 +32,7 @@
 </head>
 <!-- 3. Display the application -->
 
-<body>
+<body class="container">
   <my-app>Loading...</my-app>
 </body>
 
