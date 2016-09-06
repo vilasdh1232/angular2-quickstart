@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HomeComponent = (function () {
-    function HomeComponent() {
+var NavbarComponent = (function () {
+    function NavbarComponent() {
     }
-    HomeComponent = __decorate([
+    NavbarComponent = __decorate([
         core_1.Component({
-            selector: 'auction-home',
-            templateUrl: 'app/components/home/home.component.html'
+            selector: 'auction-navbar',
+            templateUrl: './navbar.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], NavbarComponent);
+    return NavbarComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.NavbarComponent = NavbarComponent;
+//# sourceMappingURL=navbar.component.js.map

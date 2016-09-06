@@ -9,17 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var NavbarComponent = (function () {
-    function NavbarComponent() {
+var LoginComponent = (function () {
+    function LoginComponent() {
+        this.submitted = false;
     }
-    NavbarComponent = __decorate([
+    LoginComponent.prototype.onSubmit = function () { this.submitted = true; };
+    Object.defineProperty(LoginComponent.prototype, "diagnostic", {
+        // TODO: Remove this when we're done
+        get: function () { return JSON.stringify(this.user); },
+        enumerable: true,
+        configurable: true
+    });
+    LoginComponent = __decorate([
         core_1.Component({
-            selector: 'auction-navbar',
-            templateUrl: 'app/components/navbar/navbar.component.html'
+            selector: 'app-login',
+            templateUrl: './login.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], NavbarComponent);
-    return NavbarComponent;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.NavbarComponent = NavbarComponent;
-//# sourceMappingURL=navbar.component.js.map
+exports.LoginComponent = LoginComponent;
+//# sourceMappingURL=login.component.js.map

@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routing } from './app.routing';
 
 import { AppComponent }  from './app.component';
-import {HomeModule} from './home/home.module';
-import {NavbarComponent } from './shared/navbar/navbar.component';
-import {FooterComponent } from './shared/footer/footer.component';
+import {HomeModule} from './modules/home/home.module';
+import {NavbarComponent } from './components/shared/navbar/navbar.component';
+import {FooterComponent } from './components/shared/footer/footer.component';
 
 
 

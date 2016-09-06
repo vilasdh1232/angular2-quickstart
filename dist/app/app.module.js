@@ -12,9 +12,9 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_routing_1 = require('./app.routing');
 var app_component_1 = require('./app.component');
-var home_module_1 = require('./home/home.module');
-var navbar_component_1 = require('./shared/navbar/navbar.component');
-var footer_component_1 = require('./shared/footer/footer.component');
+var home_module_1 = require('./modules/home/home.module');
+var navbar_component_1 = require('./components/shared/navbar/navbar.component');
+var footer_component_1 = require('./components/shared/footer/footer.component');
 var AppModule = (function () {
     function AppModule() {
         this.title = 'angular2-quickstart!';
