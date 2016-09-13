@@ -1,10 +1,4 @@
-import { Component } from '@angular/core';
-import {User} from './models/user';
-
-@Component({
-  selector: 'my-app',
-  template: `
-    <!-- Navigation -->
+<!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -72,12 +66,3 @@ import {User} from './models/user';
         </h4>
     </div>
 </footer>
-    `
-})
-export class AppComponent {
-  title = 'Tour of Heroes';
-  hero: User = {
-    id: 1,
-    username: 'Windstorm'
-  };
-}
