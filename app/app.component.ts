@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {User} from './models/user';
 
 @Component({
   selector: 'my-app',
@@ -75,9 +74,5 @@ import {User} from './models/user';
     `
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
-  hero: User = {
-    id: 1,
-    username: 'Windstorm'
-  };
+
 }
