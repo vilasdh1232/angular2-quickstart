@@ -9,21 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var login_component_1 = require('./login.component');
-var register_component_1 = require('./register.component');
-var AuthModule = (function () {
-    function AuthModule() {
+debugger;
+var PageNotFoundComponent = (function () {
+    function PageNotFoundComponent() {
     }
-    AuthModule = __decorate([
-        core_1.NgModule({
-            declarations: [
-                login_component_1.LoginComponent,
-                register_component_1.RegisterComponent
-            ]
+    PageNotFoundComponent = __decorate([
+        core_1.Component({
+            selector: 'pagenotfound',
+            template: "Page not found!"
         }), 
         __metadata('design:paramtypes', [])
-    ], AuthModule);
-    return AuthModule;
+    ], PageNotFoundComponent);
+    return PageNotFoundComponent;
 }());
-exports.AuthModule = AuthModule;
-//# sourceMappingURL=auth.module.js.map
+exports.PageNotFoundComponent = PageNotFoundComponent;
+//# sourceMappingURL=pagenotfound.component.js.map

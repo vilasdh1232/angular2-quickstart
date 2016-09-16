@@ -13,6 +13,10 @@ var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
 var auth_module_1 = require('./modules/auth/auth.module');
+var header_component_1 = require('./components/partials/header.component');
+var footer_component_1 = require('./components/partials/footer.component');
+var pagenotfound_component_1 = require('./components/pagenotfound.component');
+var app_routes_1 = require('./app.routes');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,10 +25,14 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                auth_module_1.AuthModule
+                auth_module_1.AuthModule,
+                app_routes_1.routing
             ],
             declarations: [
-                app_component_1.AppComponent
+                app_component_1.AppComponent,
+                header_component_1.HeaderComponent,
+                footer_component_1.FooterComponent,
+                pagenotfound_component_1.PageNotFoundComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
