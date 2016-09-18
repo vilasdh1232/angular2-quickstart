@@ -2,7 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  template: ` <!-- Navigation -->
+  template: ` 
+  <div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+<!-- Navigation -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
