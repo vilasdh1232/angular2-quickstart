@@ -18,7 +18,7 @@ var AppComponent = (function () {
             //moduleId: module.id,
             selector: 'my-app',
             //templateUrl: 'app/app.component.html',
-            template: "<nav>\n    <a routerLink=\"/crisis-center\" routerLinkActive=\"active\">Crisis Center</a>\n    <a routerLink=\"/heroes\" routerLinkActive=\"active\">Heroes</a>\n</nav>\n<router-outlet></router-outlet>\n<app-footer></app-footer>"
+            template: "<app-header></app-header>\n               <router-outlet></router-outlet>\n               <app-footer></app-footer>"
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

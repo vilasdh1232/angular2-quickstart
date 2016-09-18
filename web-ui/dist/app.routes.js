@@ -2,7 +2,11 @@
 var router_1 = require('@angular/router');
 var pagenotfound_component_1 = require('./components/pagenotfound.component');
 var login_component_1 = require('./modules/auth/login.component');
+var register_component_1 = require('./modules/auth/register.component');
 var appRoutes = [
+    {
+        path: '', redirectTo: 'login', pathMatch: 'full'
+    },
     {
         path: 'login',
         component: login_component_1.LoginComponent,
@@ -10,7 +14,13 @@ var appRoutes = [
             title: 'Heroes List'
         }
     },
-    { path: '', component: login_component_1.LoginComponent },
+    {
+        path: 'register',
+        component: register_component_1.RegisterComponent,
+        data: {
+            title: 'Heroes List'
+        }
+    },
     { path: '**', component: pagenotfound_component_1.PageNotFoundComponent }
 ];
 exports.appRoutingProviders = [];

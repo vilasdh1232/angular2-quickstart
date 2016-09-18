@@ -6,29 +6,14 @@ import { User }      from './../../models/user';
   selector: 'app-login',
   template: `<div class="container">
     <h1>Login Form</h1>
-    <form>
+    <form (ngSubmit)="getLogin()" >
       <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" id="username" class="form-control"
-              required minlength="4" maxlength="24"
-              name="username" [(ngModel)]="user.username"             >
-
-        <div *ngIf="username.errors && (username.dirty || username.touched)"
-            class="alert alert-danger">
-            <div [hidden]="!username.errors.required">
-              Name is required
-            </div>
-            <div [hidden]="!username.errors.minlength">
-              Name must be at least 4 characters long.
-            </div>
-            <div [hidden]="!username.errors.maxlength">
-              Name cannot be more than 24 characters long.
-            </div>
-        </div>
+        <input type="text" class="form-control" id="username" name="username" [ngModel]="user.username" required #username="ngModel">
       </div>
       <div class="form-group">
-        <label for="alterEgo">Alter Ego</label>
-        <input type="text" class="form-control" id="alterEgo">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" [ngModel]="user.password" required  #password="ngModel">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
@@ -39,7 +24,12 @@ import { User }      from './../../models/user';
 export class LoginComponent {
   @Input()
 
-  user: User;
+  user: User = new User();
+
+  getLogin(loginFrm) {
+    console.log(this.user);
+    console.log(loginFrm);
+  }
   // TODO: Remove this when we're done
   get diagnostic() { return JSON.stringify(this.user); }
 
