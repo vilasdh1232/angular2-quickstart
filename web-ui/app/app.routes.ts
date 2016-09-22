@@ -5,27 +5,40 @@ import {AppComponent} from './app.component';
 import {PageNotFoundComponent} from './components/pagenotfound.component';
 import {LoginComponent} from './modules/auth/login.component';
 import {RegisterComponent} from './modules/auth/register.component';
+import {SubjectsComponent} from './components/subjects/subject.component';
+import {DashboardComponent} from './components/dashboard.component';
 
 
 const appRoutes: Routes = [
     {
-        path: '', redirectTo: 'login', pathMatch: 'full'
+        path: '', redirectTo: 'dashboard', pathMatch: 'full'
+    },
+    {
+        path: 'dashboard',
+        component: DashboardComponent
+        
     },
     {
         path: 'login',
         component: LoginComponent,
         data: {
-            title: 'Heroes List'
+            title: 'Sign in'
         }
     },
     {
         path: 'register',
         component: RegisterComponent,
         data: {
-            title: 'Heroes List'
+            title: 'Sign up'
         }
     },
-    
+    {
+        path: 'subject',
+        component: SubjectsComponent,
+        data: {
+            title: 'Subject List'
+        }
+    },
     { path: '**', component: PageNotFoundComponent }
 ];
 

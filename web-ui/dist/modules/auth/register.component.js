@@ -24,8 +24,9 @@ var RegisterComponent = (function () {
     ], RegisterComponent.prototype, "user", void 0);
     RegisterComponent = __decorate([
         core_1.Component({
+            //moduleId: module.id,
             selector: 'app-register',
-            template: "<div class=\"container\">\n    <h1>Register Form</h1>\n    <form (ngSubmit)=\"getRegister()\" >\n      <div class=\"form-group\">\n        <label for=\"username\">Username</label>\n        <input type=\"text\" class=\"form-control\" id=\"username\" name=\"username\" [(ngModel)]=\"user.username\" required #username=\"ngModel\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"password\">Password</label>\n        <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" [(ngModel)]=\"user.password\" required  #password=\"ngModel\">\n      </div>\n      <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n    </form>\n</div>\n\n    "
+            templateUrl: 'app/modules/auth/register.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], RegisterComponent);

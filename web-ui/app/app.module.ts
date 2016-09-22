@@ -9,6 +9,11 @@ import { HeaderComponent }  from './components/partials/header.component';
 import { FooterComponent }  from './components/partials/footer.component';
 import { LoginComponent }  from './modules/auth/login.component';
 import { RegisterComponent }  from './modules/auth/register.component';
+import { SubjectsComponent }  from './components/subjects/subject.component';
+import { SubjectService }  from './services/subject.service';
+import {DashboardComponent} from './components/dashboard.component';
+import {NavComponent} from './components/partials/nav.component'
+
 
 import {PageNotFoundComponent } from './components/pagenotfound.component';
 
@@ -31,10 +36,14 @@ import { routing, appRoutingProviders }  from './app.routes';
     FooterComponent,
     PageNotFoundComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SubjectsComponent,
+    DashboardComponent,
+    NavComponent
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    SubjectService
   ],
   bootstrap: [AppComponent]
 })

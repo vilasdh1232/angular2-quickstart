@@ -18,6 +18,10 @@ var header_component_1 = require('./components/partials/header.component');
 var footer_component_1 = require('./components/partials/footer.component');
 var login_component_1 = require('./modules/auth/login.component');
 var register_component_1 = require('./modules/auth/register.component');
+var subject_component_1 = require('./components/subjects/subject.component');
+var subject_service_1 = require('./services/subject.service');
+var dashboard_component_1 = require('./components/dashboard.component');
+var nav_component_1 = require('./components/partials/nav.component');
 var pagenotfound_component_1 = require('./components/pagenotfound.component');
 var app_routes_1 = require('./app.routes');
 var AppModule = (function () {
@@ -38,10 +42,14 @@ var AppModule = (function () {
                 footer_component_1.FooterComponent,
                 pagenotfound_component_1.PageNotFoundComponent,
                 login_component_1.LoginComponent,
-                register_component_1.RegisterComponent
+                register_component_1.RegisterComponent,
+                subject_component_1.SubjectsComponent,
+                dashboard_component_1.DashboardComponent,
+                nav_component_1.NavComponent
             ],
             providers: [
-                app_routes_1.appRoutingProviders
+                app_routes_1.appRoutingProviders,
+                subject_service_1.SubjectService
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
